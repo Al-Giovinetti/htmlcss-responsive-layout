@@ -14,12 +14,8 @@
     margin: 0 auto;
 }
 
-.container>*{
-    padding: 0.5rem;
-}
-
 section{
-    margin: 1rem 0;
+    padding: 1rem 0;
 }
 
 
@@ -69,6 +65,7 @@ header div, header ul{
 }
 
 .struments>.container>div{
+    margin-top: 1rem;
     border-radius: 5px;
 }
 
@@ -82,7 +79,7 @@ header div, header ul{
     border-radius: 5px;
 }
 
-.benefit>.container>div{
+.benefit .card-benefit>div{
     margin-top: 1rem ;
     border-radius: 5px;
 }
@@ -92,7 +89,10 @@ header div, header ul{
     .struments>.container{
         display: flex;
         flex-wrap: wrap;
-        gap:1rem
+        gap:1rem;
+    }
+    .struments>.container>div{
+        margin-top: 0;
     }
     .struments .column-big{
         width: calc((100% / 3 - 0.5rem)* 2);
@@ -102,6 +102,18 @@ header div, header ul{
     }
     .experts .card-expert{
         display: flex;
+    }
+    .benefit .card-benefit{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .benefit .card-benefit>div{
+        width:calc(50% - 1rem)
+    }
+    .about-us .container{
+        display: flex;
+        justify-content: space-between;
     }
 
 }
