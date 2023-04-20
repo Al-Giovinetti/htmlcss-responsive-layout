@@ -32,6 +32,10 @@ button{
     padding: 0.4rem;
     border-style: none;
 }
+/* Allineameto testi */
+.center-align{
+    text-align: center;
+}
 
 /* Colore sfondi */
 .bg-blu{
@@ -100,6 +104,11 @@ header i{
 .benefit .card-benefit>div{
     margin-top: 1rem ;
     border-radius: 5px;
+}
+
+/* Footer */
+Footer p{
+    padding: 1rem;
 }
 
 /* Media query 480 tablet */
