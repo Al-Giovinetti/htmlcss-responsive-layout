@@ -12,12 +12,31 @@
     background-color: #0084FD;
 }
 
-header{
-    height: 100px;
-    justify-content: space-between;
+.container{
+    width: 90%;
+    margin: 0 auto;
 }
 
-header>img{
+header{
     height: 80px;
-    width: 80px;
+    justify-content: space-between;
+    padding: 1rem;
 }
+
+header div, header ul{
+    background-color: red;
+}
+
+.struments div{
+    width: 100%;
+    margin: 2rem;
+    background-color: red;
+    height: 200px;
+}
+
+
+
+
+
+
+
