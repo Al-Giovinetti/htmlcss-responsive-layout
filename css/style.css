@@ -10,12 +10,12 @@
 }
 
 .container{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
 section{
-    padding: 1rem 0;
+    padding: 1rem 1rem;
 }
 
 
@@ -62,6 +62,10 @@ header{
 
 header div, header ul{
     background-color: red;
+}
+
+header ul.after-768{
+    display: none;
 }
 
 .struments>.container>div{
@@ -114,6 +118,25 @@ header div, header ul{
     .about-us .container{
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media screen and ( min-width:768px){
+    header ul.after-768{
+        display: flex;
+    }
+    header ul.before-768{
+        display:none;
+    }
+    .container{
+        width: 60%;
+    }
+    .strategic>.container{
+        display: flex;
+        justify-content: center;
+    }
+    .benefit .card-benefit>div{
+        width:calc(100% / 3 - 1rem)
     }
 
 }
