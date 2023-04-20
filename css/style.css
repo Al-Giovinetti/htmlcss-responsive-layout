@@ -1,4 +1,4 @@
-/* elemti generali */
+/* Elemti generali */
 *{
     margin: 0;
     padding: 0;
@@ -18,6 +18,20 @@ section{
     padding: 1rem 1rem;
 }
 
+.container>div{
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    border-radius: 15px;
+    padding: 0.4rem;
+    border-style: none;
+}
 
 /* Colore sfondi */
 .bg-blu{
@@ -40,7 +54,7 @@ section{
     background-color:black;
 }
 
-/* Colori testi */
+/* Colore testi */
 
 .color-blu{
     color:#0084FD;
@@ -54,35 +68,35 @@ section{
     color: violet;;
 }
 
+/* Header */
 header{
-    height: 80px;
-    justify-content: space-between;
     padding: 1rem;
-}
-
-header div, header ul{
-    background-color: red;
 }
 
 header ul.after-768{
     display: none;
 }
 
-.struments>.container>div{
-    margin-top: 1rem;
-    border-radius: 5px;
+header a{
+    color: white;
+    text-decoration: none;
 }
 
-.strategic>.container>div{
-    margin-top: 1rem ;
-    border-radius: 5px;
+header .container{
+    justify-content: space-between;
+    align-items: center;
 }
 
-.experts>.container>div{
-    margin-top: 1rem;
-    border-radius: 5px;
+header li{
+    padding: 0 0.5rem;
+    margin: auto;
 }
 
+header i{
+    font-size: 2rem;
+}
+
+/* Benefit */
 .benefit .card-benefit>div{
     margin-top: 1rem ;
     border-radius: 5px;
@@ -106,6 +120,7 @@ header ul.after-768{
     }
     .experts .card-expert{
         display: flex;
+        gap: 1rem;
     }
     .benefit .card-benefit{
         display: flex;
@@ -129,11 +144,12 @@ header ul.after-768{
         display:none;
     }
     .container{
-        width: 60%;
+        width: 70%;
     }
     .strategic>.container{
         display: flex;
         justify-content: center;
+        gap: 1rem;
     }
     .benefit .card-benefit>div{
         width:calc(100% / 3 - 1rem)
