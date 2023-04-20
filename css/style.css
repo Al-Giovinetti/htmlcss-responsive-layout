@@ -20,7 +20,7 @@ section{
 
 .container>div{
     margin-top: 1rem;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 ul{
@@ -32,6 +32,21 @@ button{
     padding: 0.4rem;
     border-style: none;
 }
+.box-img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    padding: 1rem;
+}
+
+.box-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
 /* Allineameto testi */
 .center-align{
     text-align: center;
@@ -104,6 +119,30 @@ header i{
     font-size: 2rem;
 }
 
+/* Sezione strategic */
+
+
+.strategic img{
+    width: 100%;
+}
+
+#arrow{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5rem;
+}
+
+#arrow>i{
+    margin: auto;
+}
+
+/* Sezione testimonial */
+
+.card-expert p{
+    padding: 1rem;
+}
+
 /*Sezione Benefit */
 .benefit .card-benefit>div{
     margin-top: 1rem ;
@@ -127,23 +166,11 @@ header i{
 }
 /* Sezione About-us */
 
-.about-us .column-img>div{
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
-
-.about-us .column-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 .column-img>div>i{
     position: absolute;
     top: 10px; right: 10px;
-font-size: 3rem;}
+    font-size: 3rem;
+}
 
 .about-us .container>div>*{
     padding: 1rem;
@@ -184,6 +211,14 @@ Footer p{
         display: flex;
         gap: 1rem;
     }
+
+    }
+    div.card-expert>div:last-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
     .benefit .card-benefit{
         display: flex;
         flex-wrap: wrap;
@@ -196,7 +231,6 @@ Footer p{
         display: flex;
         justify-content: space-between;
     }
-}
 
 @media screen and ( min-width:768px){
     header ul.after-768{
@@ -207,6 +241,10 @@ Footer p{
     }
     .container{
         width: 70%;
+    }
+
+    .strategic img{
+        width: 50%;
     }
     .strategic>.container{
         display: flex;
