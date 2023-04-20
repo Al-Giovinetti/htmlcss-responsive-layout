@@ -47,7 +47,7 @@ button{
 }
 
 .bg-violet{
-    background-color: violet;
+    background-color:#9792E4;
 }
 
 .bg-white{
@@ -69,7 +69,11 @@ button{
 }
 
 .color-violet{
-    color: violet;;
+    color:#9792E4;
+}
+
+.color-gold{
+    color:#FDC15F;
 }
 
 /* Header */
@@ -100,12 +104,22 @@ header i{
     font-size: 2rem;
 }
 
-/* Benefit */
+/*Sezione Benefit */
 .benefit .card-benefit>div{
     margin-top: 1rem ;
     border-radius: 5px;
 }
 
+/* Sezione Started */
+.started span:last-child{
+    display: block;
+}
+.started .container>*{
+    padding: 1rem;
+}
+.started a{
+    color: white;
+}
 /* Footer */
 Footer p{
     padding: 1rem;
