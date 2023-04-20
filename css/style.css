@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.bg-blu{
+    background-color: #0084FD;
+}
+
+header{
+    height: 100px;
+    justify-content: space-between;
+}
+
+header>img{
+    height: 80px;
+    width: 80px;
+}
