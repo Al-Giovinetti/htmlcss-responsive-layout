@@ -33,15 +33,13 @@ button{
     border-style: none;
 }
 .box-img{
-    width: 200px;
-    height: 200px;
     position: relative;
     padding: 1rem;
 }
 
 .box-img>img{
-    width: 100%;
-    height: 100%;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 50%;
     margin: auto;
@@ -211,8 +209,6 @@ Footer p{
         display: flex;
         gap: 1rem;
     }
-
-    }
     div.card-expert>div:last-child{
         display: flex;
         flex-direction: column;
@@ -231,7 +227,7 @@ Footer p{
         display: flex;
         justify-content: space-between;
     }
-
+}
 @media screen and ( min-width:768px){
     header ul.after-768{
         display: flex;
