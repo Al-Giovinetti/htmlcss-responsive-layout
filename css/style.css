@@ -11,6 +11,7 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
+
 }
 
 .container{
@@ -115,12 +116,12 @@ header i{
 /* Sezione strumenti */
 .struments .column-big{
     padding: 1rem 1rem 0 2rem;
+    position: relative;
 }
 .column-big img{
     width: 200px;
     display: block;
     margin: auto;
-    position: relative;
 }
 .column-big button{
     display: block;
@@ -136,8 +137,6 @@ header i{
     display: block;
     padding-bottom: 1rem;
 }
-
-
 
 /* Sezione strategic */
 
@@ -160,7 +159,7 @@ header i{
     padding-bottom: 1rem;
 }
 
-/* Sezione testimonial */
+/* Sezione esperti */
 
 .card-expert p{
     padding: 1rem;
@@ -179,6 +178,9 @@ header i{
     margin: auto;
 }
 
+.card-expert span:last-child{
+    padding-bottom: 0.5rem;
+}
 /*Sezione Benefit */
 .benefit .card-benefit>div{
     margin-top: 1rem ;
@@ -245,6 +247,11 @@ Footer p{
     }
     .column-big img{
         display: inline;
+        position:relative;
+        top: 4px;
+    }
+    .strategic img{
+        width: 50%;
     }
     .experts .card-expert{
         display: flex;
@@ -279,10 +286,22 @@ Footer p{
         display:none;
     }
     .container{
-        width: 70%;
+        width: 85%;
     }
     .column-big{
         display: flex;
+        width: calc((100% / 3 - 0.5rem) * 2) ;
+        position: relative;
+    }
+    .column-big p{
+        margin-right: 200px;
+    }
+    
+    .column-big img{
+        display: inline;
+        position: absolute;
+        bottom: 0;
+        
     }
     .strategic .container>div:first-child{
         position: relative;
