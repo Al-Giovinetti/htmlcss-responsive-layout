@@ -32,17 +32,9 @@ button{
     padding: 0.4rem;
     border-style: none;
 }
-.box-img{
-    position: relative;
-    padding: 1rem;
-}
 
-.box-img>img{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: auto;
+h3,h2,p{
+    padding-bottom: 1rem;
 }
 
 /* Allineameto testi */
@@ -119,7 +111,6 @@ header i{
 
 /* Sezione strategic */
 
-
 .strategic img{
     width: 100%;
 }
@@ -128,17 +119,34 @@ header i{
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    margin-bottom: 5rem;
+    margin: auto;
 }
 
 #arrow>i{
     margin: auto;
 }
 
+.strategic div.bg-white{
+    padding-bottom: 1rem;
+}
+
 /* Sezione testimonial */
 
 .card-expert p{
     padding: 1rem;
+}
+
+.box-img{
+    position: relative;
+    padding: 1rem;
+}
+
+.box-img>img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
 }
 
 /*Sezione Benefit */
@@ -228,6 +236,8 @@ Footer p{
         justify-content: space-between;
     }
 }
+
+/* Media query deskyop 768 */
 @media screen and ( min-width:768px){
     header ul.after-768{
         display: flex;
@@ -238,9 +248,20 @@ Footer p{
     .container{
         width: 70%;
     }
+    .strategic .container>div:first-child{
+        position: relative;
+        width:300%;
+    }
+    .strategic-left{
+        position: absolute;
+        bottom: 0.5rem;
+    }
 
+    .strategic div.bg-white{
+        margin-top: 5rem;
+    }
     .strategic img{
-        width: 50%;
+        width: 80%;
     }
     .strategic>.container{
         display: flex;
