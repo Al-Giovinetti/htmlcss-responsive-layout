@@ -9,6 +9,10 @@
     display: flex;
 }
 
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
 .container{
     width: 100%;
     margin: 0 auto;
@@ -108,6 +112,32 @@ header li{
 header i{
     font-size: 2rem;
 }
+/* Sezione strumenti */
+.struments .column-big{
+    padding: 1rem 1rem 0 2rem;
+}
+.column-big img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.column-big button{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.column-small{
+    padding: 1rem;
+}
+
+.struments .column-small i{
+    font-size: 5rem;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+
 
 /* Sezione strategic */
 
@@ -213,6 +243,9 @@ Footer p{
     .struments .column-small{
         width: calc((100% / 3 - 1rem));
     }
+    .column-big img{
+        display: inline;
+    }
     .experts .card-expert{
         display: flex;
         gap: 1rem;
@@ -247,6 +280,9 @@ Footer p{
     }
     .container{
         width: 70%;
+    }
+    .column-big{
+        display: flex;
     }
     .strategic .container>div:first-child{
         position: relative;
