@@ -291,17 +291,9 @@ Footer p{
     .column-big{
         display: flex;
         width: calc((100% / 3 - 0.5rem) * 2) ;
-        position: relative;
     }
-    .column-big p{
-        margin-right: 200px;
-    }
-    
-    .column-big img{
-        display: inline;
-        position: absolute;
-        bottom: 0;
-        
+    .column-big>div:last-child{
+        align-self: flex-end;
     }
     .strategic .container>div:first-child{
         position: relative;
