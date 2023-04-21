@@ -250,8 +250,12 @@ Footer p{
     }
     .strategic .container>div:first-child{
         position: relative;
-        width:300%;
+        width:60%;
     }
+    .strategic .container>div:last-child{
+        width: 40%;
+    }
+
     .strategic-left{
         position: absolute;
         bottom: 0.5rem;
