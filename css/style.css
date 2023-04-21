@@ -38,8 +38,20 @@ button{
     border-style: none;
 }
 
+button:not(header button){
+    padding: 0.5rem 2rem;
+}
+
 h3,h2,p{
     padding-bottom: 1rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 /* Allineameto testi */
@@ -192,7 +204,6 @@ header i{
 .card-benefit button{
     position: absolute;
     bottom:1rem; left: 1rem;
-    padding: 0.5rem 1rem;
 }
 
 .card-benefit>div>*:not(button){
@@ -206,19 +217,23 @@ header i{
 
 .column-img>div>i{
     position: absolute;
-    top: 10px; right: 10px;
+    top: 10%; right: 10%;
     font-size: 3rem;
 }
 
-.about-us .container>div>*{
+.about-us .container>div>*:not(button){
     padding: 1rem;
+}
+
+#biger{
+    font-size: 3rem;
 }
 
 /* Sezione Started */
 .started span:last-child{
     display: block;
 }
-.started .container>*{
+.started .container>*:not(button){
     padding: 1rem;
 }
 .started a{
